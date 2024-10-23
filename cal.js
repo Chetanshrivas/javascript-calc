@@ -13,6 +13,9 @@ for(let button of buttons){
         else if(btntext === '='){
             try{
                 input.value = eval(input.value); 
+                setTimeout(()  => {
+                input.value = '';
+                },10000)
             }
             catch(err){
                 input.value = 'uudi baba';
